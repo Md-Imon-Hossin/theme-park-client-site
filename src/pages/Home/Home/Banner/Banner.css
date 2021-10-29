@@ -1,0 +1,11 @@
+
+@media (max-width : 420px){
+    .carousel-caption h3{
+        font-size: 20px;
+    }
+}
+@media (max-width : 420px){
+    .carousel-caption h5{
+        font-size: 15px;
+    }
+}

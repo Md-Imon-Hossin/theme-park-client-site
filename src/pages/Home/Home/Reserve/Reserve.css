@@ -1,0 +1,9 @@
+.reserve-image{
+    background: url('../../../../images//Reserve/promo_bg1.jpg');
+    width: 100%;
+    padding: 250px 0;
+    background-size: cover;
+}
+.reserve-image span{
+    font-style: italic;
+}
