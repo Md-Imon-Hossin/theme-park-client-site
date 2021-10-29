@@ -4,6 +4,7 @@
 * An Adorable Floaties-Life Vest Hybrid Your Children Will Love .
 * Water parks make money by charging admission fees, but they also earn revenue through sales of food and beverages, souvenirs and merchandise.
 * The water in Water Park gets cleaned and filtered from 30 minutes to a few hours for the larger pools .
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
