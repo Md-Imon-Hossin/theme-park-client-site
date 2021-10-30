@@ -10,7 +10,7 @@ const Service = ({service}) => {
       data.email = 'hero@gmail.com' 
       data.status = "pending"
       // console.log(data)
-      fetch("http://localhost:5000/services",{
+      fetch("https://infinite-eyrie-27553.herokuapp.com/services",{
         method : "POST",
         headers : {'content-type' : 'application/json'},
         body : JSON.stringify(data),
@@ -19,7 +19,7 @@ const Service = ({service}) => {
     return (
                
         <div >
-<div className="card h-100" >
+<div className="card h-100 shadow" >
 <img className='img-fluid' src={img} alt="" /> 
   <div className="card-body">
     <h5 className="card-title">{name}</h5>

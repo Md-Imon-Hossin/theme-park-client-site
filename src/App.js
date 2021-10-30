@@ -5,6 +5,7 @@ import AddService from './pages/AddService/AddService';
 import Home from './pages/Home/Home/Home';
 import Login from './pages/Login/Login/Login';
 import PrivateRoute from './pages/Login/PrivateRoute/PrivateRoute';
+import ManageAllService from './pages/ManageAllService/ManageAllService';
 import MyOrder from './pages/MyOrder/MyOrder';
 import OrderPlace from './pages/OrderPlace/OrderPlace';
 import Footer from './pages/Shared/Header/Footer/Footer';
@@ -32,9 +33,9 @@ function App() {
     <Route path='/myOrder'> 
       <MyOrder></MyOrder>
     </Route>
-    {/* < PrivateRoute path='/orderPlace/:serviceId'> 
-    <OrderPlace></OrderPlace>
-    </PrivateRoute> */}
+    <Route path='/manageAllService'> 
+      <ManageAllService></ManageAllService>
+    </Route>
     <PrivateRoute path='/orderPlace/:serviceId'>
       <OrderPlace></OrderPlace>
     </PrivateRoute>

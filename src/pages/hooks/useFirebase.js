@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react"
 import initializeAuthentication from "../Firebase/firebase.init"
 import { getAuth, signInWithPopup, GoogleAuthProvider,onAuthStateChanged, signOut} from "firebase/auth";
-
 // initialize 
 initializeAuthentication() ;
 // UseFirebase 
@@ -16,17 +15,11 @@ const useFirebase = ()=>{
     const  signInUsingGoogle = ()=>{
         setIsLoading(true)
     return signInWithPopup(auth,googleProvider)
-    //  .then(result=>{
-    //      console.log(result.user)
-    //      setUser(result.user)
-    //  })
      .catch(err=>{
          setError(err.message)
      })
      .finally(()=> setIsLoading(false))
     }
-    
-
     // observer user state changed
     useEffect(()=>{
 
@@ -39,7 +32,6 @@ const useFirebase = ()=>{
             }
             setIsLoading(false)
         })
-
         return ()=>unsubsCribed ;
 
     },[])
@@ -52,7 +44,6 @@ const useFirebase = ()=>{
         setUser({})
         })
         .finally(()=>setIsLoading(false))
-
     }
     // Return
     return{

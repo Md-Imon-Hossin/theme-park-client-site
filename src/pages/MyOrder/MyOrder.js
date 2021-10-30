@@ -5,17 +5,18 @@ const MyOrder = () => {
     const email = 'hero@gmail.com'
     const [orders,setOrders] = useState([]) 
     useEffect(()=>{
-        fetch(`http://localhost:5000/myOrder/${email}`) 
+        fetch(`https://infinite-eyrie-27553.herokuapp.com/myOrder/${email}`) 
         .then(res=>res.json()) 
         .then(data=>setOrders(data))
     },[])
-    // console.log(orders)
+    console.log(orders)
     return (
         <div > 
             <h3>{orders?.length}</h3>
             <div className='card-container'>
             {
                orders.map(order=><Order 
+                key = {order._id}
                order= {order} 
                ></Order>)  
            }

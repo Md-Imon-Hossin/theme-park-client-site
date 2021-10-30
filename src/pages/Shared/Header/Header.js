@@ -2,7 +2,6 @@ import React from 'react';
 import { Container, Nav, Navbar } from 'react-bootstrap';
 import { HashLink } from 'react-router-hash-link';
 import useAuth from '../../../context/useAuth';
-// import useFirebase from '../../hooks/useFirebase';
 const Header = () => {
   const {user,logOut} = useAuth()
     return (
@@ -14,9 +13,9 @@ const Header = () => {
     <Navbar.Collapse className="justify-content-end">
     <Nav.Link as={HashLink} to="/home">Home</Nav.Link>
       <Nav.Link as={HashLink} to="/login">Login</Nav.Link> 
+      <Nav.Link as={HashLink} to="/orderPlace">OrderPlace</Nav.Link> 
+      <Nav.Link as={HashLink} to="/manageAllService">Manage All Service</Nav.Link> 
       <Nav.Link as={HashLink} to="/addService">AddService</Nav.Link> 
-      {/* <Nav.Link as={HashLink} to="/orderPlace">OrderPlace</Nav.Link> */}
-
 { user?.email &&
   <Nav.Link as={HashLink} to="/myOrder">MyOrder</Nav.Link> 
 }
@@ -24,20 +23,13 @@ const Header = () => {
       user?.email && 
  <button onClick={logOut} className='btn btn-danger'>Log Out</button>
  }
-
       <Navbar.Text>
-        Signed in as: <a href="#login">Mark Otto</a>
+        Signed in as: <a href="#login">{user.displayName}</a>
       </Navbar.Text>
     </Navbar.Collapse>
-     
     </Container>
   </Navbar>
-  
-  
-
-
 </>        
     );
 };
-
 export default Header;

@@ -22,7 +22,6 @@ const AddService = () => {
       <input {...register("name", { required: true, maxLength: 20 })} placeholder='Name' />
       <textarea {...register("description")}placeholder='Description'/>
       <input {...register("img")} placeholder='Img Url'/>
-      {/* <input type="number" {...register("age", { min: 18, max: 99 })} /> */}
       <input type="submit" />
     </form>
         </div>

@@ -1,5 +1,4 @@
 
-
 const firebaseConfig = {
     apiKey: "AIzaSyCYFSqE3NLEL9e52YLsglsHintlZCglOio",
     authDomain: "water-boom-610b3.firebaseapp.com",

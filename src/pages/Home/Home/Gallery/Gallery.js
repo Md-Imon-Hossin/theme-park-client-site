@@ -23,7 +23,6 @@ const Gallery = () => {
                             <img className='img-fluid mb-3' src={gallery2} alt="" />
                 <img className='img-fluid mb-3' src={gallery5} alt="" />
                             </div>
-
                             <div className="col-xl-4 col-lg-4">
                             <img className='img-fluid mb-3' src={gallery3} alt="" />
                 <img className='img-fluid mb-3' src={gallery6} alt="" />
@@ -35,5 +34,4 @@ const Gallery = () => {
         </div>
     );
 };
-
 export default Gallery;
