@@ -16,10 +16,10 @@ const OrderPlace = () => {
         
     }, [])
 
-    useEffect(() => {
-        const foundEmployee = specific.find(employee => employee.id == serviceId)
-        setSingleEmployee(foundEmployee)
-    },[specific])
+    // useEffect(() => {
+    //     const foundEmployee = specific.find(employee => employee.id == serviceId)
+    //     setSingleEmployee(foundEmployee)
+    // },  [specific])
    
     return (
         <div>

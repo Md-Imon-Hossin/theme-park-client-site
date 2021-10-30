@@ -8,6 +8,7 @@ const Services = () => {
         .then(res=>res.json()) 
         .then(data=>setServices(data))
     },[])
+    
     return (
         <div className='py-3'>
             <h3 className='text-primary mb-4'>Our Services</h3>

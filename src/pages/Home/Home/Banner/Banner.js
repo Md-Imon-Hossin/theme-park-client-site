@@ -2,10 +2,14 @@ import React from 'react';
 import { Carousel } from 'react-bootstrap';
 import './Banner.css'
 // Import Banner Image 
-import banner1 from '../../../../images/banner/banner1.jpg' 
-import banner2 from '../../../../images/banner/banner2.jpg' 
-import banner3 from '../../../../images/banner/banner3.jpg' 
+// import banner1 from '../../../../images/banner/banner1.jpg' 
+// import banner2 from '../../../../images/banner/banner2.jpg' 
+// import banner3 from '../../../../images/banner/banner3.jpg' 
 // import banner4 from '../../../../images/banner/banner4.jpg' 
+
+import banner1 from '../../../../images/cut/banner-girl.jpg'
+import banner2 from '../../../../images/cut/banner-ride.jpg'
+import banner3 from '../../../../images/cut/banner-water-girl.jpg'
 
 const Banner = () => {
     return (
@@ -19,9 +23,9 @@ const Banner = () => {
     />
     <Carousel.Caption>
       <div className='carousel-caption'>
-      <h5 className='text-dark'>WELCOME TO WATERBOOM
-</h5>
-<h3>THE GREATEST WATER AND AMUSEMENT PARK IN THE WORLD
+      <p className='text-dark'>WELCOME TO WATERBOOM
+</p>
+<h3 className='text-dark'>THE GREATEST WATER AND AMUSEMENT PARK IN THE WORLD
 </h3> 
       </div>
     </Carousel.Caption>
@@ -34,9 +38,9 @@ const Banner = () => {
     />
     <Carousel.Caption>
     <div className='carousel-caption'>
-      <h5 className='text-dark'>WELCOME TO WATERBOOM
-</h5>
-<h3>THE GREATEST WATER AND AMUSEMENT PARK IN THE WORLD
+      <p className='text-dark'>WELCOME TO WATERBOOM
+</p>
+<h3 className='text-dark'>THE GREATEST WATER AND AMUSEMENT PARK IN THE WORLD
 </h3> 
       </div>
     </Carousel.Caption>
@@ -49,9 +53,9 @@ const Banner = () => {
     />
     <Carousel.Caption>
     <div className='carousel-caption'>
-      <h5 className='text-dark'>WELCOME TO WATERBOOM
-</h5>
-<h3>THE GREATEST WATER AND AMUSEMENT PARK IN THE WORLD
+      <p className='text-dark'>WELCOME TO WATERBOOM
+</p>
+<h3 className='text-dark'>THE GREATEST WATER AND AMUSEMENT PARK IN THE WORLD
 </h3> 
       </div>
     </Carousel.Caption>
