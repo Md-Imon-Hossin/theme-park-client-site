@@ -3,8 +3,10 @@
     flex-direction: column; 
     justify-content: center; 
 align-items: center; 
+padding: 30px 0;
 }
 .add-service form input,textarea{
     width: 50%;
     margin-bottom: 20px;
+    padding: 5px;
 }

@@ -15,7 +15,7 @@ const Header = () => {
       <Nav.Link className='text-white' as={HashLink} to="/login">Login</Nav.Link> 
       <Nav.Link className='text-white' as={HashLink} to="/orderPlace">OrderPlace</Nav.Link> 
       <Nav.Link className='text-white' as={HashLink} to="/manageAllService">Manage All Service</Nav.Link> 
-      <Nav.Link className='text-white' as={HashLink} to="/addService">AddService</Nav.Link> 
+      <Nav.Link className='text-white' as={HashLink} to="/addService">Add A New Service</Nav.Link> 
 { user?.email &&
   <Nav.Link className='text-white' as={HashLink} to="/myOrder">MyOrder</Nav.Link> 
 }
