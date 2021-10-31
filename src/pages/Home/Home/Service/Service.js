@@ -5,17 +5,17 @@ import { Link } from 'react-router-dom';
 const Service = ({service}) => { 
     const {_id,name,img,description,price,place} = service 
     // handle add to cart
-    const handleAddToCart = (service)=>{
-      const data =  service 
-      data.email = 'hero@gmail.com' 
-      data.status = "pending"
-      // console.log(data)
-      fetch("https://infinite-eyrie-27553.herokuapp.com/services",{
-        method : "POST",
-        headers : {'content-type' : 'application/json'},
-        body : JSON.stringify(data),
-      })
-    }
+    // const handleAddToCart = (service)=>{
+    //   const data =  service 
+    //   data.email = 'hero@gmail.com' 
+    //   data.status = "pending"
+    //   // console.log(data)
+    //   fetch("https://infinite-eyrie-27553.herokuapp.com/services",{
+    //     method : "POST",
+    //     headers : {'content-type' : 'application/json'},
+    //     body : JSON.stringify(data),
+    //   })
+    // }
     return (
                
         <div >
@@ -27,7 +27,7 @@ const Service = ({service}) => {
     <h6 className="card-text">{place}</h6>
     <p className="card-text">{description}</p>
     <Link to={`/orderPlace/${_id}`} >
-    <button onClick={()=>handleAddToCart(service)} className="btn btn-primary">Buy Now </button>
+    <button  className="btn btn-primary">Buy Now </button>
     </Link>
   </div>
 </div>
