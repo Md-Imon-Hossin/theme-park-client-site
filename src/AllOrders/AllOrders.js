@@ -1,16 +1,12 @@
-
-
-
 import React, { useEffect, useState } from 'react';
 import { Button, Card, Col } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
 
 const AllOrders = ({ order }) => {
-    const { img, productKey, _id } = order;
+    const { productKey, _id } = order;
     console.log(order);
     const [myOrder, setMyOrder] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/services')
+        fetch('https://infinite-eyrie-27553.herokuapp.com/services')
             .then(res => res.json())
             .then(data => {
                 if (data.length) {
@@ -23,7 +19,7 @@ const AllOrders = ({ order }) => {
     console.log(myOrder.img)
     const [products, setProducts] = useState([]);
     useEffect(() => {
-        const url = `http://localhost:5000/orders`;
+        const url = `https://infinite-eyrie-27553.herokuapp.com/orders`;
         fetch(url)
             .then(res => res.json())
             .then(data => setProducts(data))
@@ -34,7 +30,7 @@ const AllOrders = ({ order }) => {
     const handleDeleteService = id => {
         const proceed = window.confirm('Are you sure, you want to delete?')
         if (proceed) {
-            const url = `http://localhost:5000/orders/${id}`
+            const url = `https://infinite-eyrie-27553.herokuapp.com/orders/${id}`
             fetch(url, {
                 method: 'DELETE'
             })
@@ -43,8 +39,7 @@ const AllOrders = ({ order }) => {
 
                     if (data.deletedCount > 0) {
                         alert('deleted successfully');
-                        // const remaining = products.filter(products._id !== id)
-                        // setProducts(remaining)
+                        
                     }
 
                 })

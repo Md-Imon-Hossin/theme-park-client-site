@@ -12,7 +12,7 @@ const OrderPlace = () => {
     const { serviceId } = useParams();
     const [order, setOrder] = useState({});
     useEffect(() => {
-        fetch(`http://localhost:5000/services/${serviceId}`)
+        fetch(`https://infinite-eyrie-27553.herokuapp.com/services/${serviceId}`)
             .then(res => res.json())
             .then(data => {
                 setOrder(data)
@@ -23,7 +23,7 @@ const OrderPlace = () => {
     const { register, handleSubmit } = useForm();
     const onSubmit = data => {
         console.log(data)
-        axios.post("http://localhost:5000/orders", data)
+        axios.post("https://infinite-eyrie-27553.herokuapp.com/orders", data)
             .then(res => console.log(res))
         // .then(result => console.log(result))
     };
