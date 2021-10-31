@@ -29,34 +29,34 @@ const OrderPlace = () => {
     };
 
     return (
-        <div>
+        <div className='form-container'>
            
-           <Col className="col1" md={12} lg={6}>
+           <Col  >
                         <form onSubmit={handleSubmit(onSubmit)}>
                             <div>
                                 <label htmlFor="">Your Name :</label>
-                                <input {...register("name", { required: true, maxLength: 20 })} defaultValue={user.displayName} required />
+                                <input {...register("name", { required: true, maxLength: 20 })} defaultValue={user.displayName}  />
                             </div>
                             <div>
                                 <label htmlFor="">Your Email :</label>
-                                <input {...register("email")} defaultValue={user.email} required />
+                                <input {...register("email")} defaultValue={user.email}  />
                             </div>
                             <div>
                                 <label htmlFor=""> Address :</label>
-                                <input {...register("address")} required />
+                                <input {...register("address")}  />
                             </div>
                             <div>
                                 <label htmlFor="">Phone :</label>
-                                <input type="tel" {...register("Phone")} require required />
+                                <input type="tel" {...register("Phone")}  />
                             </div>
                             <div>
                                 <label htmlFor="">Product Key :</label>
-                                <input {...register("productKey")} defaultValue={serviceId} required />
+                                <input {...register("productKey")} defaultValue={serviceId}  />
                             </div>
 
                             <div>
                                 <label htmlFor="">Destination :</label>
-                                <input {...register("place")} defaultValue={order.name} required />
+                                <input {...register("place")} defaultValue={order.name}  />
                             </div>
                           
 
@@ -73,17 +73,3 @@ const OrderPlace = () => {
 };
 
 export default OrderPlace;
-
-
-// {/* <Col>
-// <Card className="card">
-//     <Card.Img variant="top" className="card-img" src={myOrder?.img} />
-//     <Card.Body>
-//         <Card.Title className="title">{myOrder?.name}</Card.Title>
-//         <p className="place">{myOrder?.places}</p>
-//         <Card.Text>{myOrder?.description}</Card.Text>
-//         {/* <Button onClick={() => handleDeleteUser(_id)} variant="primary">DELETE</Button> */}
-
-//     </Card.Body>
-// </Card>
-// </Col> */}
