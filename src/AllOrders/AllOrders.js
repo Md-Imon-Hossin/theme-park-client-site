@@ -16,7 +16,7 @@ const AllOrders = ({ order }) => {
             })
     }, [])
 
-    console.log(myOrder.img)
+    // console.log(myOrder.img)
     const [products, setProducts] = useState([]);
     useEffect(() => {
         const url = `https://infinite-eyrie-27553.herokuapp.com/orders`;

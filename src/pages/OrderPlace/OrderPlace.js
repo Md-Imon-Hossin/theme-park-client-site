@@ -31,7 +31,7 @@ const OrderPlace = () => {
     return (
         <div className='form-container'>
            
-           <Col  >
+           <Col>
                         <form onSubmit={handleSubmit(onSubmit)}>
                             <div>
                                 <label htmlFor="">Your Name :</label>
@@ -58,9 +58,7 @@ const OrderPlace = () => {
                                 <label htmlFor="">Destination :</label>
                                 <input {...register("place")} defaultValue={order.name}  />
                             </div>
-                          
-
-                           
+        
                             <div>
                             <input className="btn btn-primary" type="submit" value="Place Order" />
                             </div>
