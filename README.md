@@ -6,14 +6,10 @@
 * Water parks make money by charging admission fees, but they also earn revenue through sales of food and beverages, souvenirs and merchandise.
 * The water in Water Park gets cleaned and filtered from 30 minutes to a few hours for the larger pools .
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was deployed with[Firebase](https://water-boom-610b3.web.app/).
+This project-server was deployed with[Heroku](https://infinite-eyrie-27553.herokuapp.com/). 
 
-## Available Scripts
 
-In the project directory, you can run:
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 

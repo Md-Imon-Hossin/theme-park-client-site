@@ -5,7 +5,7 @@ import { Button, Card, Col } from 'react-bootstrap';
 import { useForm } from 'react-hook-form';
 import { useParams } from 'react-router';
 import useAuth from '../../context/useAuth';
-
+import './OrderPlace.css'
 const OrderPlace = () => {
     const { user } = useAuth();
     console.log(user);
