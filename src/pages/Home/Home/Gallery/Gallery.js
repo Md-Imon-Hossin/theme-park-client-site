@@ -8,7 +8,7 @@ import gallery6 from  '../../../../images/Gallery/Gallery6.jpg'
 const Gallery = () => {
     return (
         <div>
-            <h4 className='text-primary mt-3'>Our Gallery</h4>
+            <h4 className='text-primary mt-4'>Our Gallery</h4>
             <h3>CAPTURED MOMENTS IN WATERBOOM</h3>
             <section>
                 <div className='py-4'>

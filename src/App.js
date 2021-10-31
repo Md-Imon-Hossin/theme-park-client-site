@@ -7,6 +7,7 @@ import Login from './pages/Login/Login/Login';
 import PrivateRoute from './pages/Login/PrivateRoute/PrivateRoute';
 import ManageAllService from './pages/ManageAllService/ManageAllService';
 import MyOrder from './pages/MyOrder/MyOrder';
+import NotFound from './pages/NotFound/NotFound';
 import OrderPlace from './pages/OrderPlace/OrderPlace';
 import Footer from './pages/Shared/Header/Footer/Footer';
 import Header from './pages/Shared/Header/Header';
@@ -39,13 +40,16 @@ function App() {
     <PrivateRoute path='/orderPlace/:serviceId'>
       <OrderPlace></OrderPlace>
     </PrivateRoute>
-
+    <PrivateRoute path='/orderPlace'>
+      <OrderPlace></OrderPlace>
+    </PrivateRoute>
+    <Route path='*'>
+      <NotFound></NotFound>
+    </Route>
       </Switch>
       <Footer></Footer>
     </Router>
         </AuthProvider>
-  
-
     </div>
   );
 }
